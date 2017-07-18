@@ -3,6 +3,9 @@ $fn=30;
 difference(){
 translate([-45,-4,0])cube([90,125,3]);
 
+translate([27,45,-1])rotate([0,0,32])
+    cube([8,8,5]);
+
 translate([135,112,-1])cylinder(r=123,h=5,$fn=120);
 translate([-135,112,-1])cylinder(r=123,h=5,$fn=120);
 
@@ -13,7 +16,7 @@ minkowski(){
 }
 
 translate([35,6.5,-1])cube([3,15,5]);
-translate([23,8,-1])cube([12,12,5]);
+translate([23,8,-1])cube([12.1,12,5]);
     
 translate([41.1,5.5,-1])
 minkowski(){
@@ -22,7 +25,7 @@ minkowski(){
 }
 
 translate([-38,6.5,-1])cube([3,15,5]);
-translate([-35,8,-1])cube([12,12,5]);
+translate([-35.1,8,-1])cube([12.1,12,5]);
 
 translate([-17,-2,-1])cube([34,34,8]);     
 
