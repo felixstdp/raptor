@@ -5,7 +5,10 @@ translate([-45,-4,0])cube([90,125,3]);
 
 translate([27,45,-1])rotate([0,0,32])
     cube([8,8,5]);
-
+    
+translate([25,30,-1])cylinder(d=2.5,h=5);    
+translate([-25,30,-1])cylinder(d=2.5,h=5);    
+      
 translate([135,112,-1])cylinder(r=123,h=5,$fn=120);
 translate([-135,112,-1])cylinder(r=123,h=5,$fn=120);
 
