@@ -3,7 +3,7 @@ $fn=30;
 difference(){
 translate([-45,-4,0])cube([90,125,3]);
 
-translate([27,45,-1])rotate([0,0,32])
+translate([28,45,-1])rotate([0,0,32])
     cube([8,8,5]);
     
 translate([25,30,-1])cylinder(d=2.5,h=5);    
@@ -42,10 +42,10 @@ translate([-6.73,110,-1])cylinder(d=2.5,h=5);
 
 rotate([0,0,90])
 {
-translate([69,7.62,-1])pin20mil(12,1.94,10);
-translate([69,-7.62,-1])pin20mil(12,1.94,10);
-translate([45,7.62,-1])pin20mil(8,1.94,10);
-translate([45,-7.62,-1])pin20mil(8,1.94,10);
+translate([50,7.62,-1])pin20mil(21,1.94,10);
+translate([50,-7.62,-1])pin20mil(21,1.94,10);
+//translate([45,7.62,-1])pin20mil(8,1.94,10);
+//translate([45,-7.62,-1])pin20mil(8,1.94,10);
 }
 }
 
@@ -78,7 +78,7 @@ translate([-17,-9.5,-1])cylinder(d=10,h=5);
 
 }
 
-translate([0,0,-10])
+translate([0,0,-5])
 rotate([180,0,180])
 {
     
