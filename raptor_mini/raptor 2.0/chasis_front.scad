@@ -42,10 +42,8 @@ translate([-6.73,110,-1])cylinder(d=2.5,h=5);
 
 rotate([0,0,90])
 {
-translate([69,7.62,-1])pin20mil(12,1.94,10);
-translate([69,-7.62,-1])pin20mil(12,1.94,10);
-translate([45,7.62,-1])pin20mil(8,1.94,10);
-translate([45,-7.62,-1])pin20mil(8,1.94,10);
+translate([50,7.62,-1])pin20mil(21,1.94,10);
+translate([50,-7.62,-1])pin20mil(21,1.94,10);
 }
 }
 
