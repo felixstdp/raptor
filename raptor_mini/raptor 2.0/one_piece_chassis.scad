@@ -1,7 +1,7 @@
 $fn=30;
 
 difference(){
-translate([-45,-4,0])cube([90,125,3]);
+translate([-45,-4,0])cube([90,122,3]);
 
 translate([135,112,-1])cylinder(r=123,h=5,$fn=120);
 translate([-135,112,-1])cylinder(r=123,h=5,$fn=120);
@@ -64,7 +64,7 @@ translate([34.9,0,0])cylinder(d=2.8,h=10,center=true);
 translate([17,-9.5,-1])cylinder(d=10,h=5);
 translate([-17,-9.5,-1])cylinder(d=10,h=5);
 
-translate([-3.5*2.54,0,-1])pin20mil(8,1.94,10);
+translate([-3.5*2.54,-1,-1])pin20mil(8,1.94,10);
 
 }
 
