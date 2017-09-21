@@ -39,11 +39,11 @@ translate([50,-7.62,-1])pin20mil(21,1.94,10);
 translate([0,73,0])
 difference(){
 union(){
-translate([0,38,0])cylinder(d=14,h=8.5);
-translate([0,38,8.5])cylinder(r1=7, r2=6, h=1);
+translate([0,38,0])cylinder(d=14,h=7.5);
+translate([0,38,7.5])cylinder(r1=7, r2=6, h=1);
 }
 translate([0,38,5.5])cylinder(d=9.5,h=25);
-translate([0,38,6.4])sphere(d=10.5);
+translate([0,38,5.5])sphere(d=10.5);
 translate([0,38,11])cube(size=[3,15,16],center=true);
 }
 
