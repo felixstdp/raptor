@@ -14,7 +14,13 @@ translate([22,18,-1])cylinder(d=3,h=8);
 translate([-41.1,5.5,-1])cylinder(d=2.8,h=8);
 translate([-41.1,22.5,-1])cylinder(d=2.8,h=8);
 translate([41.1,5.5,-1])cylinder(d=2.8,h=8);
-translate([41.1,22.5,-1])cylinder(d=2.8,h=8);   
+translate([41.1,22.5,-1])cylinder(d=2.8,h=8);
+
+translate([9.25,0,-1])cylinder(d=4.5,h=6);
+translate([-9.25,0,-1])cylinder(d=4.5,h=6);
+translate([9.25,36,-1])cylinder(d=4.5,h=6);
+translate([-9.25,36,-1])cylinder(d=4.5,h=6);   
+    
 translate([28,45,-1])rotate([0,0,32])
     cube([8,8,5]);
 
