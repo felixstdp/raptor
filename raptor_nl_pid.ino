@@ -47,7 +47,7 @@ void loop()
  
 }
 
-void drive(int L, int R) // speed for wheels Left and Right
+void drive(int L, int R) // speed for wheels Left and Right, positive is forward
 {
   L=constrain(L,-255,255); // avoid PWM overflow
   R=constrain(R,-255,255);
