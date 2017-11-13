@@ -25,14 +25,13 @@ const float kv=0.07;
 int p,d,u,vbase;
 long i=0;
 int p_old=0;
-boolean on=HIGH;
 
 void setup() {
 }
 
 void loop()
 {
-  digitalWrite(STBY, on);
+  digitalWrite(STBY, HIGH);
   
   qtra.read(IR); // read raw sensor values
   
