@@ -27,7 +27,7 @@ void loop()
   drive(-200,200,1000); // rotate left
 }
 
-void drive(int L, int R) // speed for wheels Left and Right, positive is forward
+void drive(int L, int R, int t) // speed for wheels Left and Right, positive is forward,time in microseconds
 {
   L=constrain(L,-255,255); // avoid PWM overflow
   R=constrain(R,-255,255);
@@ -39,4 +39,6 @@ void drive(int L, int R) // speed for wheels Left and Right, positive is forward
   digitalWrite(BIN1, R<0); // switch < and >= if left wheel doesnt spin as expected
   digitalWrite(BIN2, R>=0);
   analogWrite(PWMB, abs(R));
+  
+  delay(t);
 }
