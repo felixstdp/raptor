@@ -1,4 +1,4 @@
-$fn=30;
+$fn=120;
 
 translate([0,122,0])rotate([0,0,90])ballcaster();
 
