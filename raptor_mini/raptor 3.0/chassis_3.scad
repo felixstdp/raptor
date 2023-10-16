@@ -1,4 +1,4 @@
-$fn=60;
+$fn=30;
 
 translate([0,122,0])rotate([0,0,90])ballcaster();
 
@@ -32,11 +32,16 @@ translate([-15,32,-1])cylinder(d=4,h=4);
 
 }
 
+difference(){
 translate([-11.25,120,0])cube([22.5,11,2]);
+translate([0,122,5.5])sphere(d=10.5);
+}
+
 difference(){
 translate([-16.25,125,0])cube([32.5,6,2]);
 translate([-16.25,125,-1])cylinder(d=10,h=4);
 translate([16.25,125,-1])cylinder(d=10,h=4);
+translate([0,122,5.5])sphere(d=10.5);
 }
 
 translate([0,135,0])
@@ -50,7 +55,7 @@ translate([10,0,-1])cylinder(d=3,h=4);
 translate([-10,0,-1])cylinder(d=3,h=4);
 }
 translate([18.5,0,-1])cylinder(d=2.8,h=4);
-translate([-18.5,0,-1])cylinder(d=2.8k,h=4);
+translate([-18.5,0,-1])cylinder(d=2.8,h=4);
 }
 
 module pin20mil(n,d_paso,h_paso)
