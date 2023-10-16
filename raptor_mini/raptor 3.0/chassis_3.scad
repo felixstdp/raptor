@@ -5,9 +5,11 @@ translate([0,122,0])rotate([0,0,90])ballcaster();
 difference(){
 translate([-50,0,0])cube([100,123,2]);
   
-translate([-165,130,-1])rotate([0,0,-90])cuarto(4,308);
+translate([-165,130,-1])rotate([0,0,-90])
+cylinder(h=4,d=308);
 mirror([1,0,0])
-translate([-165,130.1,-1])rotate([0,0,-90])cuarto(4,308);
+translate([-165,130.1,-1])rotate([0,0,-90])
+cylinder(h=4,d=308);
     
 translate([-30,11,-1])cylinder(d=3,h=8);
 translate([-30,19,-1])cylinder(d=3,h=8);
@@ -62,13 +64,6 @@ module pin20mil(n,d_paso,h_paso)
  for (i=[1:n]){
      translate([(i-1)*2.54,0,0])cylinder(d=d_paso,h=h_paso);
 } 
-
-module cuarto(h, d){
-intersection(){
-cylinder(h=h, d=d,$fn=120);
-cube([d+1,d+1,h+1]);
-}
-}
 
 module ballcaster(){
 difference(){
