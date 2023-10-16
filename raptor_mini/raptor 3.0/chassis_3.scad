@@ -5,11 +5,8 @@ translate([0,122,0])rotate([0,0,90])ballcaster();
 difference(){
 translate([-50,0,0])cube([100,123,2]);
   
-translate([-165,130,-1])rotate([0,0,-90])
-cylinder(h=4,d=308);
-mirror([1,0,0])
-translate([-165,130.1,-1])rotate([0,0,-90])
-cylinder(h=4,d=308);
+translate([-165,130,-1])cylinder(h=4,d=308);
+translate([165,130.1,-1])cylinder(h=4,d=308);
     
 translate([-30,11,-1])cylinder(d=3,h=8);
 translate([-30,19,-1])cylinder(d=3,h=8);
