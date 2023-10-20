@@ -1,12 +1,12 @@
-$fn=120;
+$fn=30;
 
 translate([0,122,0])rotate([0,0,90])ballcaster();
 
 difference(){
 translate([-50,0,0])cube([100,123,2]);
   
-translate([-165,130,-1])cylinder(h=4,d=308);
-translate([165,130.1,-1])cylinder(h=4,d=308);
+translate([-165,130,-1])cylinder(h=4,d=308,$fn=120);
+translate([165,130.1,-1])cylinder(h=4,d=308,$fn=120);
     
 translate([-30,11,-1])cylinder(d=3,h=8);
 translate([-30,19,-1])cylinder(d=3,h=8);
@@ -18,7 +18,7 @@ translate([-45,24,-1])cylinder(d=2.8,h=8);
 translate([45,6.5,-1])cylinder(d=2.8,h=8);
 translate([45,24,-1])cylinder(d=2.8,h=8);
     
-translate([-64,48,0])
+translate([-65.3,48,0])
 {
 translate([40,7.62,-1])pin20mil(20,1.7,10);
 translate([40,-7.62,-1])pin20mil(20,1.7,10);
@@ -30,6 +30,8 @@ translate([15,32,-1])cylinder(d=4,h=4);
 translate([-15,32,-1])cylinder(d=4,h=4);
 
 }
+
+//translate([-12.7,133,-1])pin20mil(11,1.7,10);
 
 difference(){
 translate([-11.25,120,0])cube([22.5,11,2]);
@@ -65,11 +67,11 @@ module pin20mil(n,d_paso,h_paso)
 module ballcaster(){
 difference(){
 union(){
-cylinder(d=14,h=7.5);
-translate([0,0,7.5])cylinder(r1=7, r2=6, h=1);
+cylinder(d=14,h=7.5,$fn=60);
+translate([0,0,7.5])cylinder(r1=7, r2=6, h=1, $fn=60);
 }
 translate([0,0,5.5])cylinder(d=9.5,h=25);
-translate([0,0,5.5])sphere(d=10.5);
+translate([0,0,5.5])sphere(d=10.5,$fn=60);
 translate([0,0,11])cube(size=[3,15,16],center=true);
 }
 }
