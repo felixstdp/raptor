@@ -1,3 +1,5 @@
+// buscar sensor como '8 sensor lines follow'
+
 $fn=30;
  
  difference(){
