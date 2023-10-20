@@ -1,3 +1,5 @@
+// sensor Pololu QTR8
+
 $fn=30;
  
  difference(){
