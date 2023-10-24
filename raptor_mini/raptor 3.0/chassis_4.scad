@@ -49,7 +49,7 @@ hull(){
 translate([18.5,0,0])cylinder(d=10,h=2);
 translate([-18.5,0,0])cylinder(d=10,h=2);
 }
-translate([-12.7,-2,-1])pin20mil(11,1.7,10);
+translate([-12.7,-2.4,-1])pin20mil(11,1.7,10);
 //translate([0,-2,0])hull(){
 //translate([10,0,-1])cylinder(d=3,h=4);
 //translate([-10,0,-1])cylinder(d=3,h=4);
