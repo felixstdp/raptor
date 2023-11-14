@@ -61,10 +61,10 @@ hull(){
 translate([18.5,0,0])cylinder(d=10,h=2);
 translate([-18.5,0,0])cylinder(d=10,h=2);
 }
-translate([-12.7,-2.4,-1])pin20mil(11,1.7,10);
-//translate([0,-2,0])hull(){
-//translate([10,0,-1])cylinder(d=3,h=4);
-//translate([-10,0,-1])cylinder(d=3,h=4);
+//translate([-12.7,-2.4,-1])pin20mil(11,1.7,10);
+
+translate([-8.89,1.27,-1])pin20mil(8,1.94,5);
+translate([-8.89,-1.27,-1])pin20mil(8,1.94,5);
 //}
 translate([18.5,0,-1])cylinder(d=2.8,h=4);
 translate([-18.5,0,-1])cylinder(d=2.8,h=4);
