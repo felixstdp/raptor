@@ -58,16 +58,14 @@ translate([0,122,5.5])sphere(d=10.5);
 translate([0,135,0])
 difference(){
 hull(){
-translate([18.5,0,0])cylinder(d=10,h=2);
-translate([-18.5,0,0])cylinder(d=10,h=2);
+translate([16,0,0])cylinder(d=10,h=2);
+translate([-16,0,0])cylinder(d=10,h=2);
 }
-//translate([-12.7,-2.4,-1])pin20mil(11,1.7,10);
-
 translate([-8.89,1.27,-1])pin20mil(8,1.94,5);
 translate([-8.89,-1.27,-1])pin20mil(8,1.94,5);
-//}
-translate([18.5,0,-1])cylinder(d=2.8,h=4);
-translate([-18.5,0,-1])cylinder(d=2.8,h=4);
+
+//translate([18.5,0,-1])cylinder(d=2.8,h=4);
+//translate([-18.5,0,-1])cylinder(d=2.8,h=4);
 }
 
 module pin20mil(n,d_paso,h_paso)
