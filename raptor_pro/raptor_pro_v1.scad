@@ -20,8 +20,8 @@ translate([45,24,-1])cylinder(d=2.8,h=8);
     
 rotate([0,0,90])
 {
-translate([65,7.62,-1])pin20mil(15,1.7,10);
-translate([65,-7.62,-1])pin20mil(15,1.7,10);
+translate([75,7.62,-1])pin20mil(15,1.7,10);
+translate([75,-7.62,-1])pin20mil(15,1.7,10);
 }
 
 translate([21,40,-1])pin20mil(4,1.7,10);
@@ -33,6 +33,7 @@ translate([21,40,-1])pin20mil(4,1.7,10);
 translate([21,47.62,-1])pin20mil(4,1.7,10);
 translate([23,32,-1])pin20mil(6,1.7,10);
 
+translate([0,55,-1])cylinder(d=20,h=5);
 }
 
 translate([0,122,5.5])sphere(d=10.5);
