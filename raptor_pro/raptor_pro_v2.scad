@@ -21,7 +21,7 @@ translate([47,6.5,-1])cylinder(d=2.8,h=8);
 translate([47,24,-1])cylinder(d=2.8,h=8);
     
 //zocalo Arduino nano
-translate([-17.5,37,0])
+translate([-17.5,35,0])
 {
 translate([0,7.62,-1])pin20mil(15,1.7,10);
 translate([0,-7.62,-1])pin20mil(15,1.7,10);
@@ -37,7 +37,7 @@ translate([24,44.62,-1])pin20mil(4,1.7,10);
 translate([25,30,-1])pin20mil(6,1.7,10);
 
 //orificio succion
-translate([0,70,-1])cylinder(d=25,h=5,$fn=120);
+translate([0,65,-1])cylinder(d=25,h=5,$fn=120);
 }
 
 //rebaje ballcaster
