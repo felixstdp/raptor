@@ -3,7 +3,7 @@ $fn=30;
 translate([0,122,0])rotate([0,0,90])ballcaster();
 
 difference(){
-translate([-50,0,0])cube([100,123,2]);
+translate([-51,0,0])cube([102,123,2]);
   
 translate([-165,130,-1])cylinder(h=4,d=308,$fn=120);
 translate([165,130.1,-1])cylinder(h=4,d=308,$fn=120);
@@ -28,13 +28,13 @@ translate([0,-7.62,-1])pin20mil(15,1.7,10);
 }
 
 //zocalo driver y encoder
-translate([23,40,-1])pin20mil(4,1.7,10);
-translate([23,47.62,-1])pin20mil(4,1.7,10);
-translate([25,33,-1])pin20mil(6,1.7,10);
+translate([24,37,-1])pin20mil(4,1.7,10);
+translate([24,44.62,-1])pin20mil(4,1.7,10);
+translate([25,30,-1])pin20mil(6,1.7,10);
 mirror([1,0,0]){
-translate([23,40,-1])pin20mil(4,1.7,10);
-translate([23,47.62,-1])pin20mil(4,1.7,10);
-translate([25,33,-1])pin20mil(6,1.7,10);
+translate([24,37,-1])pin20mil(4,1.7,10);
+translate([24,44.62,-1])pin20mil(4,1.7,10);
+translate([25,30,-1])pin20mil(6,1.7,10);
 
 //orificio succion
 translate([0,70,-1])cylinder(d=25,h=5,$fn=120);
