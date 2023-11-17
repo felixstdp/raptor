@@ -1,4 +1,4 @@
-BOM
+BOM VSSI: very small scale of integration
 - 1x Arduino Nano ATmega328/ESP32/STM32
 - 2x Driver TA6586
 - 2x Encoder Pololu N20
