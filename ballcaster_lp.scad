@@ -1,0 +1,20 @@
+$fn=60;
+difference(){
+union(){
+cylinder(d=11,h=5.5);
+translate([0,0,5.5])cylinder(r1=5.5, r2=4.5, h=1);
+hull(){
+translate([6.5,0,0])cylinder(d=6,h=3);
+translate([-6.5,0,0])cylinder(d=6,h=3);
+}
+}
+translate([0,0,5])cylinder(d=7.8,h=5);
+translate([0,0,4])sphere(d=8.5);
+//cylinder(d=8.5,h=4);
+rotate([0,0,90])translate([0,0,10])
+cube(size=[2,11,16],center=true);
+translate([-6.5,0,-1])cylinder(d=2.2,h=10);
+translate([6.5,0,-1])cylinder(d=2.2,h=10);
+translate([-6.5,0,3])cylinder(d=4.5,h=10,$fn=6);
+translate([6.5,0,3])cylinder(d=4.5,h=10,$fn=6);
+}
