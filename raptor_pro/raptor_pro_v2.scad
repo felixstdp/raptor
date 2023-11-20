@@ -37,7 +37,7 @@ translate([25.4,42.62,-1])pin20mil(4,1.2,10);
 translate([25.4,27.38,-1])pin20mil(6,1.2,10);
 
 //orificio succion
-translate([0,65,-1])cylinder(d=25,h=5,$fn=120);
+translate([0,66,-1])cylinder(d=28,h=5,$fn=120);
 }
 
 //rebaje ballcaster
