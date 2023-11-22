@@ -1,0 +1,12 @@
+difference(){
+cylinder(d=38,h=1.5,$fn=60);
+translate([0,0,-1])cylinder(d=28,h=3.5,$fn=60);
+}
+difference(){
+union(){
+translate([-1.5,-15,0])cube([3,30,1.5]);
+translate([-15,-1.5,0])cube([30,3,1.5]);
+cylinder(d=12,h=8,$fn=60);
+}
+translate([0,0,-1])cylinder(d=10,h=12,$fn=60);
+}
