@@ -4,8 +4,10 @@ translate([0,0,-1])cylinder(d=28,h=3.5,$fn=60);
 }
 difference(){
 union(){
-translate([-1.5,-15,0])cube([3,30,1.5]);
-translate([-15,-1.5,0])cube([30,3,1.5]);
+translate([-1.5,-15,0])cube([3,30,1.2]);
+translate([-15,-1.5,0])cube([30,3,1.2]);
+translate([-1.5,-27.7/2,0])cube([3,27.7,2.2]);
+translate([-27.7/2,-1.5,0])cube([27.7,3,2.2]);
 cylinder(d=12,h=8,$fn=60);
 }
 translate([0,0,-1])cylinder(d=10,h=12,$fn=60);
