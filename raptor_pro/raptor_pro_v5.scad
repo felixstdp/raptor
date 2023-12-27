@@ -52,6 +52,13 @@ translate([15,30,-1])cylinder(d=4,h=4);
 translate([-15,30,-1])cylinder(d=4,h=4);
 translate([15,4,-1])cylinder(d=4,h=4);
 translate([-15,4,-1])cylinder(d=4,h=4);
+
+//interruptor
+translate([-27,3,-1])cylinder(d=2,h=4);
+translate([-31,3,-1])cylinder(d=1.3,h=4);
+translate([-34,3,-1])cylinder(d=1.3,h=4);
+translate([-37,3,-1])cylinder(d=1.3,h=4);
+translate([-41,3,-1])cylinder(d=2,h=4);
 }
 
 //morro
