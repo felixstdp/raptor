@@ -69,8 +69,8 @@ cylinder(d=5,h=1);
 translate([-8.75,120,0])cube([17.5,32.5,1]);
 }
 hull(){
-translate([10,149,0])cylinder(d=12,h=2);
-translate([-10,149,0])cylinder(d=12,h=2);
+translate([10,149,0])cylinder(d=13,h=2);
+translate([-10,149,0])cylinder(d=13,h=2);
 }
 }
 translate([0,135,5.5])sphere(d=10.5);
