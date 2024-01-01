@@ -5,8 +5,8 @@ translate([0,135,2])rotate([0,0,0])ballcaster();
 difference(){
 translate([-51,0,0])cube([102,128,2]);
   
-translate([-165,135,-1])cylinder(h=4,d=313,$fn=120);
-translate([165,135,-1])cylinder(h=4,d=313,$fn=120);
+translate([-165,135,-1])cylinder(h=4,d=311.5,$fn=120);
+translate([165,135,-1])cylinder(h=4,d=311.5,$fn=120);
     
 //conexion motores
 translate([-32,11,-1])cylinder(d=2,h=8);
@@ -63,14 +63,14 @@ difference(){
 union(){
 minkowski(){
 cylinder(d=4.5,h=1);
-translate([-7,120,0])cube([14,32.5,1]);
+translate([-7.2,120,0])cube([14.4,32.5,1]);
 }
 hull(){
 translate([10,149,0])cylinder(d=13,h=2);
 translate([-10,149,0])cylinder(d=13,h=2);
 }
 }
-translate([0,135,5.5])sphere(d=10.5);
+//translate([0,135,5.5])sphere(d=10.5);
 translate([-8.89,151+1.27,-1])pin20mil(8,1.2,5);
 translate([-8.89,151-1.27,-1])pin20mil(8,1.2,5);
 translate([-12.7,151-3*1.27,-1])pin20mil(11,1.2,5);
