@@ -59,18 +59,12 @@ translate([-40.5,3,-1])cylinder(d=2,h=4);
 }
 
 //morro
+translate([-9.45,120,0])cube([18.9,24,2]);
 difference(){
-union(){
-minkowski(){
-cylinder(d=4.5,h=1);
-translate([-7.2,120,0])cube([14.4,32.5,1]);
-}
 hull(){
 translate([10,149,0])cylinder(d=13,h=2);
 translate([-10,149,0])cylinder(d=13,h=2);
 }
-}
-//translate([0,135,5.5])sphere(d=10.5);
 translate([-8.89,151+1.27,-1])pin20mil(8,1.2,5);
 translate([-8.89,151-1.27,-1])pin20mil(8,1.2,5);
 translate([-12.7,151-3*1.27,-1])pin20mil(11,1.2,5);
