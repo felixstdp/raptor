@@ -1,8 +1,8 @@
 // asigna nombres a los pines de Raptor Nano
-#define RIN1 5
-#define RIN2 6
-#define LIN1 9
-#define LIN2 10
+#define LIN1 6
+#define LIN2 5
+#define RIN1 9
+#define RIN2 10
 
 // esta parte se ejecutara solo una vez al principio
 void setup() {
@@ -11,7 +11,7 @@ void setup() {
 
 // esta parte se repetira en bucle para siempre
 void loop() {
-  drive(0,0,100);
+  drive(50,0,100);
 }
 
 //función de movimiento con el driver TA6586
@@ -29,9 +29,9 @@ void drive(int L, int R, int t)
   R=constrain(R,-255,255);
 
 // poner valores a los pines
-  analogWrite(RIN1, L*(L>0));
-  analogWrite(RIN2, -L*(L<0));
-  analogWrite(LIN1, R*(R>0));
-  analogWrite(LIN2, -R*(R<0));
+  analogWrite(LIN1, L*(L>0));
+  analogWrite(LIN2, -L*(L<0));
+  analogWrite(RIN1, R*(R>0));
+  analogWrite(RIN2, -R*(R<0));
   delay(t);
 }
