@@ -1,8 +1,8 @@
 // asigna nombres a los pines de Raptor Nano
-#define BIN2 6
-#define BIN1 5
-#define AIN1 10
-#define AIN2 9
+#define RIN1 5
+#define RIN2 6
+#define LIN1 9
+#define LIN2 10
 
 // esta parte se ejecutara solo una vez al principio
 void setup() {
@@ -11,7 +11,7 @@ void setup() {
 
 // esta parte se repetira en bucle para siempre
 void loop() {
-  drive(50,50,100);
+  drive(0,0,100);
 }
 
 //función de movimiento con el driver TA6586
@@ -19,19 +19,19 @@ void loop() {
 void drive(int L, int R, int t) 
 {
 //iniciar el modo de los pines para los motores
-  pinMode(AIN1,OUTPUT);
-  pinMode(AIN2,OUTPUT);
-  pinMode(BIN1,OUTPUT);
-  pinMode(BIN2,OUTPUT);
+  pinMode(RIN1,OUTPUT);
+  pinMode(RIN2,OUTPUT);
+  pinMode(LIN1,OUTPUT);
+  pinMode(LIN2,OUTPUT);
 
 // evitar valores no válidos para el PWM
   L=constrain(L,-255,255);
   R=constrain(R,-255,255);
 
 // poner valores a los pines
-  digitalWrite(AIN1, L<0);
-  analogWrite(AIN2, L+255*(L<0));
-  digitalWrite(BIN1, R<0);
-  analogWrite(BIN2, R+255*(R<0));
+  analogWrite(RIN1, L*(L>0));
+  analogWrite(RIN2, -L*(L<0));
+  analogWrite(LIN1, R*(R>0));
+  analogWrite(LIN2, -R*(R<0));
   delay(t);
 }
