@@ -4,6 +4,14 @@
 #define RIN1 9
 #define RIN2 10
 
+#define BUTTON1 2
+#define BUTTON2 3
+
+#define ENCODER1 7
+#define ENCODER2 8
+#define ENCODER3 11
+#define ENCODER4 12
+
 // esta parte se ejecutara solo una vez al principio
 void setup() {
 
